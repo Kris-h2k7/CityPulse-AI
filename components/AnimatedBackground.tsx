@@ -1,0 +1,3 @@
+"use client";
+import { motion } from "framer-motion";
+export default function AnimatedBackground(){return <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden"><motion.div className="absolute -right-24 -top-28 h-[420px] w-[420px] rounded-full bg-blue-200/50 blur-3xl" animate={{x:[0,-24,0],y:[0,22,0]}} transition={{duration:13,repeat:Infinity,ease:"easeInOut"}}/><motion.div className="absolute left-[30%] top-28 h-64 w-64 rounded-full bg-violet-200/40 blur-3xl" animate={{x:[0,24,0],y:[0,-20,0]}} transition={{duration:16,repeat:Infinity,ease:"easeInOut"}}/><div className="page-grid absolute inset-0 opacity-40"/></div>}

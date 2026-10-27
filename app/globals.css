@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f6f8fc; color: #17243b; font-family: Arial, Helvetica, sans-serif; }
+button, a, select { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid rgba(73,105,232,.42); outline-offset: 3px; }
+.page-grid { background-image: radial-gradient(rgba(101,124,169,.16) .8px, transparent .8px); background-size: 18px 18px; }
+.glass { background: rgba(255,255,255,.82); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.9); box-shadow: 0 12px 40px rgba(34,55,95,.06); }
+.road { fill:none; stroke:#d9e1ed; stroke-width:17; stroke-linecap:round; }
+.road-core { fill:none; stroke:#fff; stroke-width:11; stroke-linecap:round; }
+.map-label { font-size:10px; fill:#8593a8; font-weight:600; letter-spacing:.06em; }
+.pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin:center; }
+@keyframes pulse { 0%,100% { opacity:.35; transform:scale(.88) } 50% { opacity:.9; transform:scale(1.12) } }
+.float { animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-7px) } }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
